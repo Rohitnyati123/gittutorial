@@ -9,6 +9,7 @@ app=Flask(__name__)
 
 @app.route("/")
 def index():
+    print("hello rohit")
     return render_template("index.html")
 
 @app.route("/prediction", methods=["POST"])
