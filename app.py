@@ -14,6 +14,7 @@ def index():
 
 @app.route("/prediction", methods=["POST"])
 def get_predict():
+    print("heloooooooooo")
 
     cgpa_1 = float(request.form.get('cgpa'))
     iq_1 = int(request.form.get('iq'))
